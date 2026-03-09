@@ -1,3 +1,5 @@
+// this is data only. NO VISUALIZATION
+
 class Model{
     constructor(){
         // todo
@@ -13,6 +15,7 @@ class Model{
 
     getScore(){
         // todo
+        return this.score;
     }
 
     getState(){
