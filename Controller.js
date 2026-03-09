@@ -9,8 +9,10 @@ class Controller{
     handleAddButton(){
         console.log("Controller handleAddButton")
         this.model.increaseScore();
-        this.model.getScore(); // this does nothing right now
-        this.view.display(); // should probably tell the view to display the score
+        let score = this.model.getScore(); // this does nothing right now
+        console.log(score)
+        this.view.showScore(score);
+        //this.view.display(); // should probably tell the view to display the score
     }
 
     handleChangeViewButton(){
